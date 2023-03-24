@@ -11,9 +11,10 @@ body{
     background-color: black;
     background-image: url(imagens/espaco.jpg);
     background-size: cover;
-    width: 100%;
+
     background-repeat: no-repeat;
     display: block;
+    margin: 0;
 }
 
 
@@ -21,5 +22,6 @@ div > img{
     position:relative;
     transform: translate(-50% -50%);
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    top: 50px;
 }
