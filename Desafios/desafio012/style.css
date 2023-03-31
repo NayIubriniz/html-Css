@@ -69,17 +69,23 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font3);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
+    background-size: cover; /*corta e também preenche a tela*/
+}
+
+section > p {
+    bottom: 2em ;
 }
 
 section.imagem > p{
+    
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.11);    
+    background-color: rgba(0, 0, 0, 0.205);    
 }
 #sectionimg{
     background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat; /*não permite repetição*/
     background-position: right center; /* deixa a posição para a direita e centralizada*/
-    background-size: cover; /*corta e também preenche a tela*/
     background-attachment: fixed; /*Faz com que a imagem de fundo fique fixa enquanto se usa a barra de rolagem*/
 
 }
@@ -87,8 +93,8 @@ section.imagem > p{
     background-image: url(imagens/background002.jpg);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: cover;
     background-attachment: fixed;
+    text-shadow: 1px 1px 0px black;
 }
 
 section.normal{
