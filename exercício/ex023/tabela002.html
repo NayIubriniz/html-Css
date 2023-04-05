@@ -13,28 +13,52 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 2px solid black;
-            text-align: center;
             padding: 10px;
            
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+        caption{
+            font-size: 1.5em;
+            padding: 2px;
+            background-color:rgba(128, 128, 128, 0.555);
         }
         thead{
             background-color: grey;
             color: white;
         }
         .state{
-            color: blue;
-            background-color: lightgray;
+            color: black;
+            font-weight: bold;
+            
         }
         .population{
             color: rgb(0, 0, 0);
-            background-color: lightgray;
+            text-align: right;
         }
+
+        tbody > tr:nth-child(odd){ /* 2n ou -2n
+            ou odd = ímpar e even = par*/
+            background-color: rgb(196, 199, 202);
+        }
+        
+
         tfoot{
             background-color: grey;
             color: white;
+            
+        }
+        .totalp{
+            font-weight: bold;
+            text-align: right;
         }
     </style>
 </head>
@@ -52,14 +76,15 @@
     -->
 
     <table>
+        <caption>População das unidades Federativas </caption>
         <thead>
-            <th>
+            <th scope="col">
                 Estado
             </th>
             
-            <th>
+            <th scope="col" style="width: 50px
+            ;">
                 População
-                (Censo de 2010)[2]
             </th>
         </thead>
         <tbody>
@@ -172,9 +197,10 @@
              </tr>
         </tbody>
         <tfoot>
-            <th>População Total</th>
-            <th>0000</th>
+            <th scope="row">População Total</th>
+            <td class="totalp">207.750.291</td>
         </tfoot>
     </table>
+    
 </body>
 </html>
